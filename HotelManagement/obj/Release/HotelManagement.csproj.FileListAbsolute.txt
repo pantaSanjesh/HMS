@@ -1,0 +1,2 @@
+C:\Project\HotelManagement\HotelManagement\obj\Release\HotelManagement.csproj.AssemblyReference.cache
+C:\Project\HotelManagement\HotelManagement\obj\Release\HotelManagement.csproj.CoreCompileInputs.cache

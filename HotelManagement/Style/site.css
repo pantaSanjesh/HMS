@@ -1,0 +1,201 @@
+﻿/* Full-page background */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('../../Images/hotel-bg.jpg'); /* adjust path if needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* horizontal centering */
+    align-items: center; /* vertical centering */
+}
+
+/* Login form container */ .login-container {
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    text-align: center;
+}
+/* Dashboard container at top-left */
+.dashboard-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px; /* small margin from edges */
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgba(0,0,0,0.5); /* optional background overlay */
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.5);
+    text-align: left;
+}
+
+    /* Title */
+    .dashboard-container h2 {
+        margin-bottom: 20px;
+        font-size: 26px;
+        color: floralwhite;
+    }
+
+/* Welcome text */
+.dashboard-user {
+    font-weight: bold;
+    color: floralwhite;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Links row */
+.dashboard-links {
+    display: flex;
+    justify-content: space-between; /* evenly space links */
+    flex-wrap: wrap; /* wrap if too many */
+    gap: 10px;
+}
+
+    /* Links style */
+    .dashboard-links a {
+        flex: 1; /* take equal width */
+        text-align: center;
+        padding: 12px 20px;
+        background-color: #0078d7;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: background 0.3s ease, transform 0.2s;
+    }
+
+        .dashboard-links a:hover {
+            background-color: #005a9e;
+            transform: translateY(-3px);
+        }
+
+
+/* Container box */
+.guest-form-container,.booking-form-container, .room-form-container, .service-form-container {
+    width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+    /* Heading */
+    .guest-form-container,.booking-form-container, .room-form-container, .service-form-container h3 {
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    /* Labels */
+    guest-form-container,booking-form-container, .service-form-container label {
+        font-weight: bold;
+        margin-top: 12px;
+        display: block;
+        color: #555;
+    }
+
+    /* Inputs and dropdown */
+        .guest-form-container, booking-form-container, .room-form-container, .service-form-container input[type="text"],
+        .guest-form-container, booking-form-container, .service-form-container select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+            .guest-form-container, booking-form-container, .service-form-container input[type="text"]:focus,
+            .guest-form-container,booking-form-container, .service-form-container select:focus {
+                border-color: #007BFF;
+                outline: none;
+            }
+
+    /* Button */
+    .guest-form-container, booking-form-container, .room-form-container, .service-form-container .aspNet-Button,
+    .guest-form-container, booking-form-container, .service-form-container input[type="submit"],
+    .guest-form-container,booking-form-container, .service-form-container button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .guest-form-container, .room-form-container, .service-form-container .aspNet-Button:hover,
+        .guest-form-container, .booking-form-container, .service-form-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+    /* Success / error message */
+    .guest-form-container,.booking-form-container, .room-form-container, .service-form-container .message {
+        display: block;
+        margin-top: 15px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+/* Booking Grid container */
+.booking-grid-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto; /* center on page */
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+    /* Heading */
+    .booking-grid-container h3 {
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    /* GridView styling */
+    .booking-grid-container .aspNet-GridView {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+        .booking-grid-container .aspNet-GridView th,
+        .booking-grid-container .aspNet-GridView td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .booking-grid-container .aspNet-GridView th {
+            background-color: #0078d7;
+            color: white;
+            font-weight: bold;
+        }
+
+        .booking-grid-container .aspNet-GridView tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .booking-grid-container .aspNet-GridView tr:hover {
+            background-color: #e0f0ff;
+        }
+
